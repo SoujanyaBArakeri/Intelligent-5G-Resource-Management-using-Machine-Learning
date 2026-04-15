@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>5G Network Simulation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h2>5G Network Simulation</h2>
+
+    <input type="number" id="bandwidth" placeholder="Bandwidth (Mbps)"><br><br>
+    <input type="number" id="latency" placeholder="Latency (ms)"><br><br>
+    <input type="number" id="signal" placeholder="Signal Strength (%)"><br><br>
+    <input type="number" id="users" placeholder="Connected Users"><br><br>
+
+    <button onclick="submitNetwork()">Submit Network Data</button>
+
+    <p id="result"></p>
+
+    <br>
+    <button onclick="goBack()">Back to Dashboard</button>
+
+    <script>
+        function goBack(){
+            window.location.href = "dashboard.html";
+        }
+    </script>
+
+    <script src="js/network.js"></script>
+
+</body>
+</html>

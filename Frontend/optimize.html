@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ML Power Optimization</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h2>Machine Learning Power Optimization</h2>
+
+    <input type="number" id="distance" placeholder="Distance (km)"><br><br>
+    <input type="number" id="users" placeholder="Number of Users"><br><br>
+
+    <button onclick="optimize()">Optimize Power</button>
+
+    <p id="output"></p>
+
+    <br>
+    <button onclick="goBack()">Back to Dashboard</button>
+
+    <script>
+        function goBack(){
+            window.location.href = "dashboard.html";
+        }
+    </script>
+
+    <script src="js/optimize.js"></script>
+
+</body>
+</html>
